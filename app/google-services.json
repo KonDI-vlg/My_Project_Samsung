@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "89414810512",
+    "project_id": "pockettime-39f84",
+    "storage_bucket": "pockettime-39f84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89414810512:android:e48483f12ffa2744c51115",
+        "android_client_info": {
+          "package_name": "com.example.schedule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89414810512-21jjokbc453ba7jo2659rc7cps8he768.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZpZFtJ0RE4KGkw9di7BE2PcJJ6mi1yE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89414810512-21jjokbc453ba7jo2659rc7cps8he768.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

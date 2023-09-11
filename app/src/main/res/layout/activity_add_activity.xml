@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_activity">
+
+<!--    <include-->
+<!--        android:id="@+id/include_add"-->
+<!--        layout="@layout/toolbar" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_add_name_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_add_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Название"
+            android:maxLength="32"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/time_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Дата"
+        android:onClick="setDate"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toStartOf="@id/time_to_add"
+        app:layout_constraintStart_toStartOf="@id/et_add_name_layout"
+        app:layout_constraintTop_toBottomOf="@id/et_add_name_layout"
+        app:strokeColor="#009dff"
+        app:strokeWidth="1dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_time_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="20dp"
+            android:text="Дата"
+            android:textStyle="bold" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/time_to_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setTime"
+        app:cardElevation="4dp"
+
+        app:layout_constraintEnd_toEndOf="@id/et_add_name_layout"
+        app:layout_constraintStart_toEndOf="@+id/time_add"
+        app:layout_constraintTop_toTopOf="@+id/time_add"
+        app:strokeColor="#009dff"
+        app:strokeWidth="1dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_time_to_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="20dp"
+            android:text="Время "
+            android:textStyle="bold" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Добавить"
+        app:cornerRadius="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Напоминание"
+        app:layout_constraintBottom_toTopOf="@id/spinner_add"
+        app:layout_constraintStart_toStartOf="@id/spinner_add" />
+
+    <Spinner
+        android:id="@+id/spinner_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toBottomOf="@id/time_add" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
